@@ -26,6 +26,13 @@
         </activity>
         <activity android:name=".SignUp">
         </activity>
+        <activity android:name=".LostOrFound">
+
+        </activity>
+        <activity android:name=".ThingsDetailFound">
+        </activity>
+        <activity android:name=".ThingsDetailLost">
+        </activity>
     </application>
 
 </manifest>

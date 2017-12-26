@@ -6,20 +6,22 @@ package com.example.usmanahmed.lostandfound;
 
 public class Model
 {
-    private String username;
-    private String password;
+    private String name;
     private String email;
-    Model()
+    private String password;
+    Model(String name,String password,String email)
     {
-
+        this.password= password;
+        this.name = name;
+        this.email = email;
     }
 
-    public String getUsername() {
-        return username;
+    public String getname() {
+        return name;
     }
 
-    public void setUsername(String username) {
-        this.username = username;
+    public void setname(String username) {
+        this.name = username;
     }
 
     public String getPassword() {

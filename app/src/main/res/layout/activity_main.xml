@@ -5,11 +5,34 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="11dp"
+        android:background="#e64d4848"
+        android:layout_marginTop="5dp"
+        android:textColor="#FFFF"
+        android:text="Logout" />
+
+    <Button
+        android:id="@+id/btnAddFound_Lost"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="16dp"
+        android:background="#e64d4848"
+        android:text="Add Post"
+        android:textColor="#FFFF" />
 
     <android.support.v7.widget.RecyclerView
         android:id="@+id/list"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true" />
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="60dp" />
 </RelativeLayout>
