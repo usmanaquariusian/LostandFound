@@ -24,4 +24,10 @@ public interface RetrofitClient
     @POST("web")
     Call<Model> signup(@Body Model model);
 
+
+    @GET("lost")
+    Call<List<LostAndFoundModel>> getLostThings();
+    @POST("found")
+    Call<LostAndFoundModel> createLostThings(@Body LostAndFoundModel lostAndFoundModel);
+
 }

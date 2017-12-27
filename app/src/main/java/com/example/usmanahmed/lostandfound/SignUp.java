@@ -1,6 +1,7 @@
 package com.example.usmanahmed.lostandfound;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -33,9 +34,11 @@ public class SignUp extends Activity {
                 Etpass=findViewById(R.id.Etpass);
                 Call<Model> signup=client.signup(new Model(Etname.getText().toString(),Etpass.getText().toString(),Etemail.getText().toString()));
                 signup.enqueue(new Callback<Model>() {
+
                     @Override
                     public void onResponse(Call<Model> call, Response<Model> response) {
                         Toast.makeText(SignUp.this, response.message(), Toast.LENGTH_SHORT).show();
+                        startActivity(new Intent(SignUp.this,LogIn.class));
                     }
 
                     @Override
