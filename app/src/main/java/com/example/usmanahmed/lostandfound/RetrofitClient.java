@@ -2,9 +2,7 @@ package com.example.usmanahmed.lostandfound;
 
 import java.util.List;
 
-import okhttp3.OkHttpClient;
 import retrofit2.Call;
-import retrofit2.Retrofit;
 import retrofit2.http.Body;
 import retrofit2.http.GET;
 import retrofit2.http.POST;
@@ -26,8 +24,10 @@ public interface RetrofitClient
 
 
     @GET("lost")
-    Call<List<LostAndFoundModel>> getLostThings();
+    Call<List<LostModel>> getLostThings();
     @POST("found")
-    Call<LostAndFoundModel> createLostThings(@Body LostAndFoundModel lostAndFoundModel);
+    Call<FoundModel> postFoundThings(@Body FoundModel foundModel);
+    @POST("lost")
+    Call<LostModel> postLostThings(@Body LostModel lostModel);
 
 }

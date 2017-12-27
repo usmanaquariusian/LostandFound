@@ -6,7 +6,7 @@ import com.google.gson.annotations.SerializedName;
  * Created by Usman Ahmed on 27/12/2017.
  */
 
-public class LostAndFoundModel {
+public class FoundModel {
     @SerializedName("product_name")
     private String product_name;
 
@@ -19,11 +19,11 @@ public class LostAndFoundModel {
     @SerializedName("founder_no")
     private String founder_no;
 
-    public LostAndFoundModel(String product_name, String product_category, String owner_name, String owner_no) {
+    public FoundModel(String product_name, String product_category, String founder_name, String founder_no) {
         this.product_name = product_name;
         this.product_category = product_category;
-        this.founder_no = owner_name;
-        this.founder_no = owner_no;
+        this.founder_name = founder_name;
+        this.founder_no = founder_no;
     }
 
     public String getProduct_name() {
@@ -34,11 +34,11 @@ public class LostAndFoundModel {
         return product_category;
     }
 
-    public String getOwner_name() {
-        return founder_no;
+    public String getFounder_name() {
+        return founder_name;
     }
 
-    public String getOwner_no() {
+    public String getFounder_no() {
         return founder_no;
     }
 }

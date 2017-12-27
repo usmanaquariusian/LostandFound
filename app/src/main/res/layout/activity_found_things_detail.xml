@@ -24,7 +24,7 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="266dp"
             android:layout_alignParentBottom="true"
             android:layout_alignParentStart="true"
             android:layout_marginBottom="117dp"
@@ -77,12 +77,12 @@
                 android:textColor="@android:color/white" />
 
             <Button
-                android:id="@+id/Btnpost"
+                android:id="@+id/btnPost"
                 android:layout_width="120dp"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/etno"
-                android:layout_centerHorizontal="true"
-                android:layout_marginTop="5dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="26dp"
                 android:background="#e64d4848"
                 android:text="Found Post"
                 android:textColor="@android:color/white" />
@@ -91,13 +91,12 @@
                 android:id="@+id/btnLogout"
                 android:layout_width="120dp"
                 android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
                 android:layout_alignParentStart="true"
-                android:layout_below="@+id/etno"
-                android:layout_marginStart="11dp"
+                android:layout_marginStart="26dp"
                 android:background="#e64d4848"
-                android:layout_marginTop="5dp"
-                android:textColor="#FFFF"
-                android:text="Logout" />
+                android:text="Logout"
+                android:textColor="#FFFF" />
 
 
         </RelativeLayout>
