@@ -32,7 +32,7 @@ public class MainActivity extends Activity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         recyclerView = findViewById(R.id.recyclerView);
-
+btnLogout=findViewById(R.id.btnLogout);
         own = new ArrayList<>();
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setHasFixedSize(true);
@@ -47,7 +47,7 @@ public class MainActivity extends Activity {
             }
         });
 
-        btnLogout.setOnClickListener(new View.OnClickListener() {
+       btnLogout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 SharedPreferences sharedPreferences = getSharedPreferences("My", MODE_PRIVATE);
